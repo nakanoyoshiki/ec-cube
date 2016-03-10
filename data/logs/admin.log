@@ -48,3 +48,8 @@
 2016/03/10 13:00:30 [/ec-cube/admin/index.php] access : user=admin auth=0 sid=418n7lacv6rm08jrrnivk2mtr1 from 192.168.33.1
 2016/03/10 13:00:30 [/ec-cube/admin/index.php] login: user=admin(2) auth=0 lastlogin=2016-03-09 15:44:24 sid=418n7lacv6rm08jrrnivk2mtr1 from 192.168.33.1
 2016/03/10 13:00:30 [/ec-cube/admin/home.php] access : user=admin auth=0 sid=418n7lacv6rm08jrrnivk2mtr1 from 192.168.33.1
+2016/03/10 18:25:07 [/ec-cube/admin/basis/index.php] access : user=admin auth=0 sid=418n7lacv6rm08jrrnivk2mtr1 from 192.168.33.1
+2016/03/10 18:25:58 [/ec-cube/admin/index.php] access : user=admin auth=0 sid=5ug2d4md0s33263cndh982ukn2 from 192.168.33.1
+2016/03/10 18:25:58 [/ec-cube/admin/index.php] login: user=admin(2) auth=0 lastlogin=2016-03-10 13:00:30 sid=5ug2d4md0s33263cndh982ukn2 from 192.168.33.1
+2016/03/10 18:25:58 [/ec-cube/admin/home.php] access : user=admin auth=0 sid=5ug2d4md0s33263cndh982ukn2 from 192.168.33.1
+2016/03/10 18:26:05 [/ec-cube/admin/contents/index.php] access : user=admin auth=0 sid=5ug2d4md0s33263cndh982ukn2 from 192.168.33.1
