@@ -1,0 +1,202 @@
+2016/03/09 14:43:03 [/ec-cube/admin/home.php] Fatal error(E_USER_ERROR): Smarty error: [in main_frame.tpl line 174]: syntax error: unclosed tag \{if} (opened line 107). (Smarty_Compiler.class.php, line 317) on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+login_id = admin(0)[ekagm5v17hh7gjakhfrvapos76]
+/vagrant/ec-cube/html/admin/home.php(28): LC_Page_Admin_Home_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/LC_Page_Admin_Home_Ex.php(54): LC_Page_Admin_Home->process
+/vagrant/ec-cube/data/class/pages/admin/LC_Page_Admin_Home.php(56): LC_Page_Admin->sendResponse
+/vagrant/ec-cube/data/class/pages/admin/LC_Page_Admin.php(116): SC_Display->prepare
+/vagrant/ec-cube/data/class/SC_Display.php(80): SC_View->getResponse
+/vagrant/ec-cube/data/class/SC_View.php(105): Smarty->fetch
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1262): Smarty->_compile_resource
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1423): Smarty->_compile_source
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1490): Smarty_Compiler->_compile_file
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty_Compiler.class.php(317): Smarty_Compiler->_syntax_error
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty_Compiler.class.php(2256): Smarty->_trigger_fatal_error
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1816): Smarty->trigger_error
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094): trigger_error
+2016/03/10 13:00:34 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: unable to read resource: &quot;&quot; on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:01:18 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:01:18 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:01:18 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:03:53 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:03:53 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:03:53 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:03:58 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:03:58 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:03:58 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:12:07 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:12:07 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:12:07 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:13:10 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:13:10 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:13:10 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:15:03 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:15:03 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:15:03 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:16:50 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:16:50 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:16:50 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:17:46 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:17:46 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:17:46 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:21:01 [/ec-cube/products/detail.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:21:01 [/ec-cube/products/detail.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:21:01 [/ec-cube/products/detail.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:24:17 [/ec-cube/products/detail.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:24:17 [/ec-cube/products/detail.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:24:17 [/ec-cube/products/detail.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:24:21 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:24:21 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:24:21 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:26:24 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:26:24 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:26:24 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:27:46 [/ec-cube/index.php] Fatal error(E_USER_ERROR): Smarty error: [in /vagrant/ec-cube/html/../data/Smarty/templates/default/header.tpl line 61]: syntax error: unrecognized tag: /if} --&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;!--{/strip (Smarty_Compiler.class.php, line 446) on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+customer_id = 1
+/vagrant/ec-cube/html/index.php(28): LC_Page_Index_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/LC_Page_Index_Ex.php(54): LC_Page_Index->process
+/vagrant/ec-cube/data/class/pages/LC_Page_Index.php(54): LC_Page->sendResponse
+/vagrant/ec-cube/data/class/pages/LC_Page.php(159): SC_Display->prepare
+/vagrant/ec-cube/data/class/SC_Display.php(80): SC_View->getResponse
+/vagrant/ec-cube/data/class/SC_View.php(105): Smarty->fetch
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1264): include
+/vagrant/ec-cube/data/Smarty/templates_c/default/%%F1^F15^F158E3F4%%site_frame.tpl.php(98): Smarty->_smarty_include
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1870): include
+/vagrant/ec-cube/data/Smarty/templates_c/default/%%58^587^5876E692%%site_main.tpl.php(14): Smarty->_smarty_include
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1868): Smarty->_compile_resource
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1423): Smarty->_compile_source
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1490): Smarty_Compiler->_compile_file
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty_Compiler.class.php(312): Smarty_Compiler->_compile_tag
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty_Compiler.class.php(446): Smarty_Compiler->_syntax_error
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty_Compiler.class.php(2256): Smarty->_trigger_fatal_error
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1816): Smarty->trigger_error
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094): trigger_error
+2016/03/10 13:28:02 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:28:02 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:28:02 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:28:48 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:28:48 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:28:48 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:33:23 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:33:23 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:33:23 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:33:28 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:33:28 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:33:28 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:33:52 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:33:52 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:33:52 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:34:57 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:34:57 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:34:57 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:35:16 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:35:16 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:35:16 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:35:20 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:35:20 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:35:20 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:35:29 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:35:29 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:35:29 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:35:43 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:35:43 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:35:43 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:35:58 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:35:58 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:35:58 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:36:20 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:36:20 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:36:20 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:36:48 [/ec-cube/index.php] Fatal error(E_USER_ERROR): Smarty error: [in /vagrant/ec-cube/html/../data/Smarty/templates/default/header.tpl line 61]: syntax error: unrecognized tag: /if} --&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;!--{/strip (Smarty_Compiler.class.php, line 446) on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+customer_id = 1
+/vagrant/ec-cube/html/index.php(28): LC_Page_Index_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/LC_Page_Index_Ex.php(54): LC_Page_Index->process
+/vagrant/ec-cube/data/class/pages/LC_Page_Index.php(54): LC_Page->sendResponse
+/vagrant/ec-cube/data/class/pages/LC_Page.php(159): SC_Display->prepare
+/vagrant/ec-cube/data/class/SC_Display.php(80): SC_View->getResponse
+/vagrant/ec-cube/data/class/SC_View.php(105): Smarty->fetch
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1264): include
+/vagrant/ec-cube/data/Smarty/templates_c/default/%%F1^F15^F158E3F4%%site_frame.tpl.php(98): Smarty->_smarty_include
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1870): include
+/vagrant/ec-cube/data/Smarty/templates_c/default/%%58^587^5876E692%%site_main.tpl.php(14): Smarty->_smarty_include
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1868): Smarty->_compile_resource
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1423): Smarty->_compile_source
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1490): Smarty_Compiler->_compile_file
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty_Compiler.class.php(312): Smarty_Compiler->_compile_tag
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty_Compiler.class.php(446): Smarty_Compiler->_syntax_error
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty_Compiler.class.php(2256): Smarty->_trigger_fatal_error
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1816): Smarty->trigger_error
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094): trigger_error
+2016/03/10 13:36:56 [/ec-cube/index.php] Fatal error(E_USER_ERROR): Smarty error: [in /vagrant/ec-cube/html/../data/Smarty/templates/default/header.tpl line 61]: syntax error: unrecognized tag: /if} --&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;!--{/strip (Smarty_Compiler.class.php, line 446) on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+customer_id = 1
+/vagrant/ec-cube/html/index.php(28): LC_Page_Index_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/LC_Page_Index_Ex.php(54): LC_Page_Index->process
+/vagrant/ec-cube/data/class/pages/LC_Page_Index.php(54): LC_Page->sendResponse
+/vagrant/ec-cube/data/class/pages/LC_Page.php(159): SC_Display->prepare
+/vagrant/ec-cube/data/class/SC_Display.php(80): SC_View->getResponse
+/vagrant/ec-cube/data/class/SC_View.php(105): Smarty->fetch
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1264): include
+/vagrant/ec-cube/data/Smarty/templates_c/default/%%F1^F15^F158E3F4%%site_frame.tpl.php(98): Smarty->_smarty_include
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1870): include
+/vagrant/ec-cube/data/Smarty/templates_c/default/%%58^587^5876E692%%site_main.tpl.php(14): Smarty->_smarty_include
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1868): Smarty->_compile_resource
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1423): Smarty->_compile_source
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1490): Smarty_Compiler->_compile_file
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty_Compiler.class.php(312): Smarty_Compiler->_compile_tag
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty_Compiler.class.php(446): Smarty_Compiler->_syntax_error
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty_Compiler.class.php(2256): Smarty->_trigger_fatal_error
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1816): Smarty->trigger_error
+/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094): trigger_error
+2016/03/10 13:37:10 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:37:10 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:37:10 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:38:37 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:38:37 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:38:37 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:38:47 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:38:47 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:38:47 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:38:52 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:38:52 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:38:52 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:39:19 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:39:19 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:39:19 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:39:25 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:39:25 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:39:25 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:48:38 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:48:38 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:48:38 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:49:11 [/ec-cube/abouts/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:49:11 [/ec-cube/abouts/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:49:11 [/ec-cube/abouts/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:49:14 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:49:14 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:49:14 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:49:52 [/ec-cube/products/list.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:49:52 [/ec-cube/products/list.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:49:52 [/ec-cube/products/list.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:50:00 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:50:00 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:50:00 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:50:39 [/ec-cube/products/list.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/10 13:50:39 [/ec-cube/products/list.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/10 13:50:39 [/ec-cube/products/list.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
