@@ -40,7 +40,9 @@ class SC_Helper_News
     public static function getNews($news_id, $has_deleted = false)
     {
         $objQuery =& SC_Query_Ex::getSingletonInstance();
-        $col = '*, cast(news_date as date) as cast_news_date';
+        $col = '*,
+        cast(news_date as date) as cast_news_date,
+        cast(end_news_date as date) as cast_end_news_date';
         $where = 'news_id = ?';
         if (!$has_deleted) {
             $where .= ' AND del_flg = 0';
@@ -61,7 +63,9 @@ class SC_Helper_News
     public function getList($dispNumber = 0, $pageNumber = 0, $has_deleted = false)
     {
         $objQuery =& SC_Query_Ex::getSingletonInstance();
-        $col = '*, cast(news_date as date) as cast_news_date';
+        $col = '*,
+        cast(news_date as date) as cast_news_date,
+        cast(end_news_date as date) as cast_end_news_date';
         $where = '';
         if (!$has_deleted) {
             $where .= 'del_flg = 0';
@@ -75,7 +79,7 @@ class SC_Helper_News
                 $objQuery->setLimit($dispNumber);
             }
         }
-        $arrRet = $objQuery->select($col, $table, $where);
+        $arrRet = $objQuery->select($col,  $table, $where);
 
         return $arrRet;
     }
@@ -95,7 +99,7 @@ class SC_Helper_News
         // 新規登録
         if ($news_id == '') {
             // INSERTの実行
-            $sqlval['rank'] = $objQuery->max('rank', 'dtb_news') + 1;
+            $sqlval['rank'] = $objQuery->max('rank', 'my') + 1;
             $sqlval['create_date'] = 'CURRENT_TIMESTAMP';
             $sqlval['news_id'] = $objQuery->nextVal('dtb_news_news_id');
             $ret = $objQuery->insert('dtb_news', $sqlval);

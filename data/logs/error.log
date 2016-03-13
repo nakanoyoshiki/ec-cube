@@ -203,3 +203,991 @@ customer_id = 1
 2016/03/10 18:25:10 [/ec-cube/products/detail.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
 2016/03/10 18:25:10 [/ec-cube/products/detail.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
 2016/03/10 18:25:10 [/ec-cube/products/detail.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/11 15:23:09 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/11 15:23:09 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/11 15:23:09 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/11 15:23:10 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/11 15:23:10 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/11 15:23:10 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/11 15:23:14 [/ec-cube/products/detail.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/11 15:23:14 [/ec-cube/products/detail.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/11 15:23:14 [/ec-cube/products/detail.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/11 15:38:25 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [PREPARE mdb2_statement_mysql_67b5cd73315816058e3ee483ae0d6d4c106608fef FROM 'INSERT INTO dtb_news(news_id,end_year,end_month,end_day,news_title,news_url,news_comment,link_method,creator_id,news_date,end_news_date,update_date,rank,create_date) SELECT ?,?,?,?,?,?,?,?,?,?,?,CURRENT_TIMESTAMP,?,CURRENT_TIMESTAMP']
+PlaceHolder: [array (
+  0 => '2',
+  1 => '2005',
+  2 => '2',
+  3 => '4',
+  4 => '本文',
+  5 => '',
+  6 => '',
+  7 => 1,
+  8 => '2',
+  9 => '2005/2/4',
+  10 => '2005/2/4',
+  11 => 2,
+)]
+MDB2 Error: no such field
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: EXECUTE mdb2_statement_mysql_67b5cd73315816058e3ee483ae0d6d4c106608fef USING @0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11]
+[Native code: 1054]
+[Native message: Unknown column 'end_year' in 'field list']
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[7a140ms8tdmusvh68f92u0c1t0]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(67): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(101): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(214): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(101): SC_Query->insert
+/vagrant/ec-cube/data/class/SC_Query.php(575): SC_Query->query
+/vagrant/ec-cube/data/class/SC_Query.php(873): SC_Query->execute
+/vagrant/ec-cube/data/class/SC_Query.php(1056): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 15:51:54 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [PREPARE mdb2_statement_mysql_64efebf0696b098c279d8ef4820890ad77c04a8c7 FROM 'INSERT INTO dtb_news(news_id,end_year,end_month,end_day,news_title,news_url,news_comment,link_method,creator_id,news_date,end_news_date,update_date,rank,create_date) SELECT ?,?,?,?,?,?,?,?,?,?,?,CURRENT_TIMESTAMP,?,CURRENT_TIMESTAMP']
+PlaceHolder: [array (
+  0 => '3',
+  1 => '2006',
+  2 => '3',
+  3 => '1',
+  4 => 'a',
+  5 => '',
+  6 => '',
+  7 => 1,
+  8 => '2',
+  9 => '2005/2/4',
+  10 => '/3/1',
+  11 => 2,
+)]
+MDB2 Error: no such field
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: EXECUTE mdb2_statement_mysql_64efebf0696b098c279d8ef4820890ad77c04a8c7 USING @0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11]
+[Native code: 1054]
+[Native message: Unknown column 'end_year' in 'field list']
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[d7fsoj39beoccml8ofeeec3b36]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(67): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(101): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(215): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(101): SC_Query->insert
+/vagrant/ec-cube/data/class/SC_Query.php(575): SC_Query->query
+/vagrant/ec-cube/data/class/SC_Query.php(873): SC_Query->execute
+/vagrant/ec-cube/data/class/SC_Query.php(1056): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 15:57:32 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [PREPARE mdb2_statement_mysql_61d6da43c405f9bf7f66cc59377346e496443fe09 FROM 'INSERT INTO dtb_news(news_id,end_year,end_month,end_day,news_title,news_url,news_comment,link_method,creator_id,news_date,end_news_date,update_date,rank,create_date) SELECT ?,?,?,?,?,?,?,?,?,?,?,CURRENT_TIMESTAMP,?,CURRENT_TIMESTAMP']
+PlaceHolder: [array (
+  0 => '4',
+  1 => '2005',
+  2 => '2',
+  3 => '2',
+  4 => 'a',
+  5 => '',
+  6 => '',
+  7 => 1,
+  8 => '2',
+  9 => '2005/2/2',
+  10 => '2005/2/2',
+  11 => 2,
+)]
+MDB2 Error: no such field
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: EXECUTE mdb2_statement_mysql_61d6da43c405f9bf7f66cc59377346e496443fe09 USING @0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11]
+[Native code: 1054]
+[Native message: Unknown column 'end_year' in 'field list']
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[d7fsoj39beoccml8ofeeec3b36]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(220): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(101): SC_Query->insert
+/vagrant/ec-cube/data/class/SC_Query.php(575): SC_Query->query
+/vagrant/ec-cube/data/class/SC_Query.php(873): SC_Query->execute
+/vagrant/ec-cube/data/class/SC_Query.php(1056): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 15:59:21 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [PREPARE mdb2_statement_mysql_6e4c8c7c38b0e6853bd81b399ec733a56d51addb3 FROM 'INSERT INTO dtb_news(news_id,end_year,end_month,end_day,news_title,news_url,news_comment,link_method,creator_id,news_date,end_news_date,update_date,rank,create_date) SELECT ?,?,?,?,?,?,?,?,?,?,?,CURRENT_TIMESTAMP,?,CURRENT_TIMESTAMP']
+PlaceHolder: [array (
+  0 => '5',
+  1 => '2005',
+  2 => '2',
+  3 => '2',
+  4 => 'a',
+  5 => '',
+  6 => '',
+  7 => 1,
+  8 => '2',
+  9 => '2005/2/2',
+  10 => '2005/2/2',
+  11 => 2,
+)]
+MDB2 Error: no such field
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: EXECUTE mdb2_statement_mysql_6e4c8c7c38b0e6853bd81b399ec733a56d51addb3 USING @0, @1, @2, @3, @4, @5, @6, @7, @8, @9, @10, @11]
+[Native code: 1054]
+[Native message: Unknown column 'end_year' in 'field list']
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[d7fsoj39beoccml8ofeeec3b36]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(220): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(101): SC_Query->insert
+/vagrant/ec-cube/data/class/SC_Query.php(575): SC_Query->query
+/vagrant/ec-cube/data/class/SC_Query.php(873): SC_Query->execute
+/vagrant/ec-cube/data/class/SC_Query.php(1056): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 16:26:58 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_537ee429ef1cac3500ae54dcb9a192fb60f54307b FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[d7fsoj39beoccml8ofeeec3b36]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(220): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(98): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:01:09 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_51957ddac2c696a4f4f409b03073d55d9b5716d22 FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank D' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[d7fsoj39beoccml8ofeeec3b36]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:01:17 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_518cb65a20c4053fe7939cad16c8a4ac50eb73ab9 FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank D' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[mdoe9bg28ubns8faf1oe5ncnc3]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:01:30 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5839aff76aa4299d0f0dcd2115dae4962f22be3a2 FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank D' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[erbaobv4gcld6hemmd5buu8vm2]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:01:41 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_57d131fffd47d9144d7d1ec81bf8ec0022bb2f90e FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank D' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[erbaobv4gcld6hemmd5buu8vm2]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:01:56 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_58331f250e193e11baea1e84f4bef7f917bc169c7 FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank D' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[erbaobv4gcld6hemmd5buu8vm2]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:02:07 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_595535aed77e71e437d89a72710e4f2c354ee4489 FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank D' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[erbaobv4gcld6hemmd5buu8vm2]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:04:47 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5e64b678ba5ff5629d39070354fc5ce083926b795 FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank D' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[erbaobv4gcld6hemmd5buu8vm2]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:05:11 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM DUAL WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_57eac567c585f822da2a912d9451b55e94db83a9f FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM DUAL WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY rank DESC' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[erbaobv4gcld6hemmd5buu8vm2]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:05:37 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM DUAL WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_55b77ddcd71693e593775912e4678d3909382367f FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM DUAL WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY rank DESC' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[eqpqc2dlaol28d3mj7boq43f40]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:06:20 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(end_news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5915d66e8091a5f4bbd55b506b3efaa200349d3fe FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(end_news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*. cast(end_news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY ra' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[eqpqc2dlaol28d3mj7boq43f40]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:06:38 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(end_news_date as end_date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5a246b9eb4a9d92da90980724ea0e7c9c1eafd0d9 FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(end_news_date as end_date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*. cast(end_news_date as end_date) as cast_end_news_date WHERE dtb_news  ORDER B' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[eqpqc2dlaol28d3mj7boq43f40]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:06:59 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5bca553805ef481a9c430e0f92dd3747536134c60 FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank D' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[eqpqc2dlaol28d3mj7boq43f40]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:07:11 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5d5cdb5e2649466e6940c6c731cf6a5898a55078d FROM 'SELECT *, cast(news_date as date) as cast_news_date FROM *. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*. cast(news_date as date) as cast_end_news_date WHERE dtb_news  ORDER BY rank D' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[eqpqc2dlaol28d3mj7boq43f40]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:07:54 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5c37e95d3f9e2204090c80aea4beba8859bad252c FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[eqpqc2dlaol28d3mj7boq43f40]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(221): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(100): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/11 17:12:00 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/11 17:12:00 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/11 17:12:00 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 22:01:15 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/12 22:01:15 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 22:01:15 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 22:07:29 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_50ed35249f8aeece3a5e908a452f125b4cc5c46ec FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[0alkc7c6jioquros5otm96imv4]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(222): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(100): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 22:23:17 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT *, cast(news_date as date) as cast_start_news_date FROM *. cast(end_news_date as end_date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ]
+MDB2 Error: syntax error
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5252f275778bf8385e38f7a3608b50da4ae64fd68 FROM 'SELECT *, cast(news_date as date) as cast_start_news_date FROM *. cast(end_news_date as end_date) as cast_end_news_date WHERE dtb_news  ORDER BY rank DESC ']
+[Native code: 1064]
+[Native message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*. cast(end_news_date as end_date) as cast_end_news_date WHERE dtb_news  ORDER B' at line 1]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(162): SC_Helper_News->getList
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(80): SC_Query->select
+/vagrant/ec-cube/data/class/SC_Query.php(176): SC_Query->getAll
+/vagrant/ec-cube/data/class/SC_Query.php(304): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 22:37:48 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_55e44ae411455089dae00c14476d2f2fe713dd4c9 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(222): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 22:39:34 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5bb55a3015a5d1cded1d13fb954137e466884448a FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(222): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(103): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 22:58:07 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_546ef323d4fe8196ade5643a52162fc35dc375bc9 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(222): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:06:07 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5b589715a12fb341915542a244ea4040e6de0da7a FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(222): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:06:44 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_55938b763ab557f0404f85414f70616f3c1a961fb FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(222): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:12:50 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_50a089b092aade7ed2dd0c8a8072f76e259687321 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(222): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:13:29 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5dd10a6fb0e7f1055c9e77102ff2e54e575fad12e FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(222): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:15:18 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_50aade732bd2f5aa2a41097294371af06c7195fd7 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(222): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:18:10 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_526424faf352b08e2f03abbdb39d1b61459597bd5 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(222): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:18:33 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_540de214b5300cc62c0d6408ae1d79fe4f22a7647 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(106): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(222): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:20:00 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/12 23:20:00 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 23:20:00 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 23:31:05 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(284)] from 192.168.33.1
+2016/03/12 23:31:11 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(284)] from 192.168.33.1
+2016/03/12 23:33:52 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:33:52 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:33:52 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5576868dae5db549ee3cc7cbe58aa2c35bdfef5d5 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(108): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(224): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:34:10 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:34:10 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:34:10 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5e7d6d13f7710bf9301c81e0a872fc4cf92fcee89 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(108): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(224): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:34:24 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:34:24 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:34:24 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5318a2e8c1be34abff4fa6d770c481ead58a8a813 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(108): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(224): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:34:30 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:34:30 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:34:30 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_55b0049111a510e1e7f8478015c2c5f1965441222 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(108): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(224): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:34:58 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:34:58 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:35:06 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:35:06 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:35:14 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:35:14 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:35:25 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/12 23:35:25 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 23:35:25 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 23:35:43 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/12 23:35:43 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 23:35:43 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 23:35:58 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:35:58 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:36:05 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:36:05 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:36:14 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/12 23:36:14 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 23:36:14 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 23:39:08 [/ec-cube/index.php] Warning(E_USER_WARNING): Smarty error: file:HTML_PATHfrontparts/header.php is not readable on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1094)] from 192.168.33.1
+2016/03/12 23:39:08 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Filename cannot be empty on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 23:39:08 [/ec-cube/index.php] Warning(E_WARNING): include() [<a href='function.include'>function.include</a>]: Failed opening '' for inclusion (include_path='/vagrant/ec-cube/data/module:.:/usr/share/pear:/usr/share/php') on [/vagrant/ec-cube/data/module/Smarty/libs/Smarty.class.php(1924)] from 192.168.33.1
+2016/03/12 23:39:15 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:39:15 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:39:25 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:39:25 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:41:37 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:41:37 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:41:41 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:41:41 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:41:58 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:41:58 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:42:22 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:42:22 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:42:28 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:42:28 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:44:28 [/ec-cube/admin/contents/index.php] Fatal error(E_PARSE): syntax error, unexpected '[' on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(296)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+2016/03/12 23:44:51 [/ec-cube/admin/contents/index.php] Fatal error(E_PARSE): syntax error, unexpected '[' on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(296)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+2016/03/12 23:45:14 [/ec-cube/admin/contents/index.php] Fatal error(E_PARSE): syntax error, unexpected '[' on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(296)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+2016/03/12 23:45:19 [/ec-cube/admin/contents/index.php] Fatal error(E_PARSE): syntax error, unexpected '[' on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(296)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+2016/03/12 23:45:36 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:45:36 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:45:36 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_560028056b351dcec8e2ca98f69b9b087f01354a7 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(108): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(224): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:45:54 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:45:54 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:45:57 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:45:57 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:46:21 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:46:21 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:46:23 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:46:23 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:48:47 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:48:47 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:48:47 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_554596a5a1d713b5b22bc8c9ac2b8b08a59f2f853 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(108): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(224): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:48:52 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:48:52 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/12 23:48:52 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5231003ec74de728f07571da0f1aea46dee798a56 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(108): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(224): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/12 23:51:34 [/ec-cube/admin/products/index.php] Warning(E_WARNING): checkdate() expects parameter 1 to be long, string given on [/vagrant/ec-cube/data/class/SC_CheckError.php(1401)] from 192.168.33.1
+2016/03/12 23:51:54 [/ec-cube/admin/products/index.php] Warning(E_WARNING): checkdate() expects parameter 1 to be long, string given on [/vagrant/ec-cube/data/class/SC_CheckError.php(1401)] from 192.168.33.1
+2016/03/13 00:01:18 [/ec-cube/admin/contents/index.php] Fatal error(E_ERROR): Call to undefined method LC_Page_Admin_Contents_Ex::disp_contents() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(107)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+2016/03/13 00:02:37 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/13 00:02:37 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/13 00:04:19 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/13 00:04:19 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/13 00:04:19 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5cf6df7f23e5d0a14637634850e220d2ec0d649e2 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(108): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(224): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/13 00:04:28 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/13 00:04:28 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/13 00:04:28 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5a4f9095eee7d2140a8d83e755c8d9ae6f4bfb92c FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(108): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(224): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/13 00:04:44 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/13 00:04:44 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/13 00:04:44 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5a2f789ee700ea4e4d037d30a21e0de991417a2db FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(108): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(224): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/13 00:04:58 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/13 00:04:58 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/13 00:04:58 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_575be2abbec119ba7d00a7a068685b795d6b7f061 FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(108): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(224): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/13 00:05:05 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/13 00:05:05 [/ec-cube/admin/contents/index.php] Warning(E_WARNING): Invalid argument supplied for foreach() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(285)] from 192.168.33.1
+2016/03/13 00:05:05 [/ec-cube/admin/contents/index.php] Fatal error(E_USER_ERROR): DB処理でエラーが発生しました。
+SQL: [SELECT MAX(rank) FROM my   ]
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: PREPARE mdb2_statement_mysql_5c7a4c27842d2c5406093f5499824a7836ff417ad FROM 'SELECT MAX(rank) FROM my   ']
+[Native code: 1146]
+[Native message: Table 'eccube_db.my' doesn't exist]
+ on [/vagrant/ec-cube/data/class/SC_Query.php(1095)] from 192.168.33.1
+login_id = admin(0)[rf32mcd7orm7l4k31bkdppas35]
+/vagrant/ec-cube/html/admin/contents/index.php(29): LC_Page_Admin_Contents_Ex->process
+/vagrant/ec-cube/data/class_extends/page_extends/admin/contents/LC_Page_Admin_Contents_Ex.php(54): LC_Page_Admin_Contents->process
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(72): LC_Page_Admin_Contents->action
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(108): LC_Page_Admin_Contents->doRegist
+/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(224): SC_Helper_News->saveNews
+/vagrant/ec-cube/data/class/helper/SC_Helper_News.php(102): SC_Query->max
+/vagrant/ec-cube/data/class/SC_Query.php(649): SC_Query->get
+/vagrant/ec-cube/data/class/SC_Query.php(683): SC_Query->getOne
+/vagrant/ec-cube/data/class/SC_Query.php(699): SC_Query->prepare
+/vagrant/ec-cube/data/class/SC_Query.php(1024): SC_Query->error
+/vagrant/ec-cube/data/class/SC_Query.php(1095): trigger_error
+2016/03/13 01:08:58 [/ec-cube/admin/contents/index.php] Fatal error(E_ERROR): Call to undefined method LC_Page_Admin_Contents_Ex::disp_contents() on [/vagrant/ec-cube/data/class/pages/admin/contents/LC_Page_Admin_Contents.php(107)] from 192.168.33.1
+login_id = admin(0)[lrsb7o8rutjv0utjquf8sidv24]
