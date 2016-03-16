@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.27, created on 2016-03-09 14:52:57
+<?php /* Smarty version 2.6.27, created on 2016-03-15 18:34:24
          compiled from products/index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('modifier', 'script_escape', 'products/index.tpl', 61, false),array('modifier', 'h', 'products/index.tpl', 74, false),array('modifier', 'sfGetErrorColor', 'products/index.tpl', 74, false),array('modifier', 'sfNoImageMainList', 'products/index.tpl', 246, false),array('modifier', 'n2s', 'products/index.tpl', 255, false),array('modifier', 'sfTrim', 'products/index.tpl', 283, false),array('modifier', 'count', 'products/index.tpl', 297, false),array('function', 'html_options', 'products/index.tpl', 102, false),array('function', 'html_checkboxes', 'products/index.tpl', 109, false),)), $this); ?>

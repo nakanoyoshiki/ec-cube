@@ -99,7 +99,7 @@ class SC_Helper_News
         // 新規登録
         if ($news_id == '') {
             // INSERTの実行
-            $sqlval['rank'] = $objQuery->max('rank', 'my') + 1;
+            $sqlval['rank'] = $objQuery->max('rank', 'dtb_news') + 1;
             $sqlval['create_date'] = 'CURRENT_TIMESTAMP';
             $sqlval['news_id'] = $objQuery->nextVal('dtb_news_news_id');
             $ret = $objQuery->insert('dtb_news', $sqlval);

@@ -36,7 +36,7 @@ define('LOCALE', "ja_JP.UTF-8");
 /** 決済モジュール付与文言 */
 define('ECCUBE_PAYMENT', "EC-CUBE");
 /** PEAR::DBのデバッグモード */
-define('PEAR_DB_DEBUG', 0);
+define('PEAR_DB_DEBUG', 1);
 /** PEAR::DBの持続的接続オプション */
 define('PEAR_DB_PERSISTENT', false);
 /** 締め日の指定(末日の場合は、31を指定してください。) */
@@ -76,7 +76,7 @@ define('ORDER_STATUS_MAX', 50);
 /** フロントレビュー書き込み最大数 */
 define('REVIEW_REGIST_MAX', 5);
 /** デバッグモード(true：sfPrintRやDBのエラーメッセージ、ログレベルがDebugのログを出力する、false：出力しない) */
-define('DEBUG_MODE', false);
+define('DEBUG_MODE', true);
 /** ログを冗長とするか(true:利用する、false:利用しない) */
 define('USE_VERBOSE_LOG', DEBUG_MODE);
 /** 管理ユーザID(メンテナンス用表示されない。) */
@@ -486,3 +486,4 @@ define('PENDING_ORDER_CANCEL_TIME', 900);
 define('PENDING_ORDER_CANCEL_FLAG', true);
 /** API機能を有効にする(true:する false:しない) */
 define('API_ENABLE_FLAG', false);
+

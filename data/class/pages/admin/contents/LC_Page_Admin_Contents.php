@@ -104,7 +104,7 @@ class LC_Page_Admin_Contents extends LC_Page_Admin_Ex
                     // POST値の引き継ぎ
                     $arrParam = $objFormParam->getHashArray();
                     // 登録実行
-                    $this->arrErr = $this->disp_contents($objFormParam);
+                    //$this->arrErr = $this->dispContents($objFormParam);
                     $res_news_id = $this->doRegist($news_id, $arrParam, $objNews);
                     if ($res_news_id !== FALSE) {
                         // 完了メッセージ
@@ -119,7 +119,7 @@ class LC_Page_Admin_Contents extends LC_Page_Admin_Ex
             case 'pre_edit':
                 $news = $objNews->getNews($news_id);
                 list($news['year'],$news['month'],$news['day']) = $this->splitNewsDate($news['cast_news_date']);
-                list($news['end_year'],$news['end_month'],$news['end_day']) = $this->splitNewsEndDate($news['cast_end_news_date']);
+                list($news['end_year'],$news['end_month'],$news['end_day']) = $this->splitNewsDate($news['cast_end_news_date']);
                 $objFormParam->setParam($news);
 
                 // POSTデータを引き継ぐ
@@ -176,7 +176,7 @@ class LC_Page_Admin_Contents extends LC_Page_Admin_Ex
     {
         $objErr = new SC_CheckError_Ex($objFormParam->getHashArray());
         $objErr->arrErr = $objFormParam->checkError();
-        $objErr->doFunc(array('開始日', '終了日', 'year', 'month', 'day', 'endyear', 'endmonth', 'endday'), array('CHECK_SET_TERM'));
+        $objErr->doFunc(array('開始日', '終了日', 'year', 'month', 'day', 'end_year', 'end_month', 'end_day'), array('CHECK_SET_TERM'));
 //        $objErr->doFunc(array('日付', 'year', 'month', 'day'), array('CHECK_DATE'));
 //        $objErr->doFunc(array('日付', 'end_year', 'end_month', 'end_day'), array('CHECK_DATE'));
         return $objErr->arrErr;
@@ -265,40 +265,12 @@ class LC_Page_Admin_Contents extends LC_Page_Admin_Ex
     /**
      * ニュースの日付の値をフロントでの表示形式に合わせるために分割
      * @param String $news_date
+     * @return array
      */
     public function splitNewsDate($news_date)
     {
         return explode('-', $news_date);
     }
-    /**
-     * ニュースの日付の値をフロントでの表示形式に合わせるために分割
-     * @param String $news_date
-     */
-    public function splitNewsEndDate($end_news_date)
-    {
-        return explode('-', $end_news_date);
-    }
-//    public function disp_contents($objFormParam) {
-//        $arrNews = $objFormParam->arrNews;
-//        //$current_time = time();
-//
-//        foreach($arrNews as $index => $sqlval){
-//            $sqlval['disable_show_news'] = true;
-//
-//            $start_time = strtotime($sqlval['news_date']);
-//            $end_time = strtotime($sqlval['end_news_date']);
-////            if($start_time < $current_time && $current_time < $end_time ){
-////                $sqlval['news_date'] = 0;
-////                return $sqlval['news_date'];
-////            }
-//            if($start_time > $end_time){
-//                return;
-//            }
-//            $arrNews[$index] = $sqlval;
-//        }
-//        $objFormParam->arrNews = $arrNews;
-//    }
-
 
     /**
      * POSTされたランクの値を取得する

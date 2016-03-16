@@ -114,7 +114,7 @@
 
     <table class="form">
         <tr>
-            <th>商品ID</th>
+            <th>商品hhID</th>
             <td><!--{$arrForm.product_id|h}--></td>
         </tr>
         <tr>
